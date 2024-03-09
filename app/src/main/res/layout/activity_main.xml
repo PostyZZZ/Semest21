@@ -50,7 +50,6 @@
         android:layout_marginBottom="335dp"
         android:onClick="openWebActivity"
         android:scaleType="fitCenter"
-
-        android:src="@drawable/msg" />
+        android:src="@drawable/inet" />
 
 </RelativeLayout>
