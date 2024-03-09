@@ -18,28 +18,35 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Инициализация кнопки "Открыть CallNum"
-        Button buttonCallNum = findViewById(R.id.buttonCallNum);
-        buttonCallNum.setOnClickListener(new View.OnClickListener() {
+        ImageButton imagebuttonCallNum = findViewById(R.id.imagebuttonCallNum);
+        imagebuttonCallNum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openCallNumActivity();
             }
         });
 
-        Button buttonOpenMessageActivity = findViewById(R.id.buttonSendMessage);
-        buttonOpenMessageActivity.setOnClickListener(new View.OnClickListener() {
+        ImageButton imagebuttonSendMessage = findViewById(R.id.imagebuttonSendMessage);
+        imagebuttonSendMessage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openMessageActivity();
             }
         });
-        // Инициализация ImageButton и установка слушателя для него
+
         ImageButton imageButtonOpenActivity2 = findViewById(R.id.imageButtonOpenActivity2);
         imageButtonOpenActivity2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openActivity2();
+            }
+        });
+
+        ImageButton imagebuttonOpenWebActivity = findViewById(R.id.imagebuttonOpenWebActivity);
+        imagebuttonOpenWebActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openWebActivity();
             }
         });
     }
@@ -57,7 +64,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, CallNum.class);
         startActivity(intent);
     }
-
-
-
+    private void openWebActivity() {
+        Intent intent = new Intent(this, WebActivity.class);
+        startActivity(intent);
+    }
 }

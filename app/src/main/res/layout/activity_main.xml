@@ -3,31 +3,54 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- ImageButton -->
     <ImageButton
         android:id="@+id/imageButtonOpenActivity2"
-        android:layout_width="126dp"
-        android:layout_height="118dp"
-        android:layout_centerInParent="true"
+        android:layout_width="109dp"
+        android:layout_height="102dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="330dp"
         android:onClick="openActivity2"
         android:scaleType="fitCenter"
         android:src="@drawable/freerio" />
 
-    <!-- Button for CallNum -->
-    <Button
-        android:id="@+id/buttonCallNum"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/imageButtonOpenActivity2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp"
-        android:text="CallNum" />
 
-    <Button
-        android:id="@+id/buttonSendMessage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Отправить сообщение"
-        android:onClick="sendMessage"/>
+    <ImageButton
+        android:id="@+id/imagebuttonCallNum"
+        android:layout_width="109dp"
+        android:layout_height="102dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="278dp"
+        android:layout_marginBottom="501dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/call" />
+
+    <ImageButton
+        android:id="@+id/imagebuttonSendMessage"
+        android:layout_width="109dp"
+        android:layout_height="102dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="483dp"
+        android:onClick="sendMessage"
+        android:scaleType="fitCenter"
+        android:src="@drawable/msg" />
+
+
+    <ImageButton
+        android:id="@+id/imagebuttonOpenWebActivity"
+        android:layout_width="109dp"
+        android:layout_height="102dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="217dp"
+        android:layout_marginBottom="335dp"
+        android:onClick="openWebActivity"
+        android:scaleType="fitCenter"
+
+        android:src="@drawable/msg" />
 
 </RelativeLayout>
