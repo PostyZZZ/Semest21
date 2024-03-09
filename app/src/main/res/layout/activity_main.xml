@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ImageButton -->
+    <ImageButton
+        android:id="@+id/imageButtonOpenActivity2"
+        android:layout_width="126dp"
+        android:layout_height="118dp"
+        android:layout_centerInParent="true"
+        android:onClick="openActivity2"
+        android:scaleType="fitCenter"
+        android:src="@drawable/freerio" />
+
+    <!-- Button for CallNum -->
+    <Button
+        android:id="@+id/buttonCallNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageButtonOpenActivity2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="CallNum" />
+
+    <Button
+        android:id="@+id/buttonSendMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Отправить сообщение"
+        android:onClick="sendMessage"/>
+
+</RelativeLayout>
