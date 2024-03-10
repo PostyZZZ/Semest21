@@ -44,7 +44,7 @@ public class CallNum extends AppCompatActivity {
                 ActivityCompat.requestPermissions(CallNum.this, new String[]{Manifest.permission.CALL_PHONE}, REQUEST_CALL_PERMISSION);
             } else {
                 String dial = "tel:" + phoneNumber;
-                startActivity(new Intent(Intent.ACTION_DIAL, Uri.parse(dial)));
+                startActivity(new Intent(Intent.ACTION_CALL, Uri.parse(dial)));
             }
         } else {
             Toast.makeText(CallNum.this, "Enter phone number", Toast.LENGTH_SHORT).show();
