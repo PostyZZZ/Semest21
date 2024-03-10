@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <ImageButton
         android:id="@+id/imageButtonOpenActivity2"
         android:layout_width="109dp"
@@ -10,7 +11,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="92dp"
-        android:layout_marginBottom="330dp"
+        android:layout_marginBottom="255dp"
         android:onClick="openActivity2"
         android:scaleType="fitCenter"
         android:src="@drawable/freerio" />
@@ -22,8 +23,8 @@
         android:layout_height="102dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="278dp"
-        android:layout_marginBottom="501dp"
+        android:layout_marginEnd="215dp"
+        android:layout_marginBottom="366dp"
         android:scaleType="fitCenter"
         android:src="@drawable/call" />
 
@@ -33,12 +34,11 @@
         android:layout_height="102dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="91dp"
-        android:layout_marginBottom="483dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="367dp"
         android:onClick="sendMessage"
         android:scaleType="fitCenter"
         android:src="@drawable/msg" />
-
 
     <ImageButton
         android:id="@+id/imagebuttonOpenWebActivity"
@@ -46,8 +46,8 @@
         android:layout_height="102dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="217dp"
-        android:layout_marginBottom="335dp"
+        android:layout_marginEnd="215dp"
+        android:layout_marginBottom="253dp"
         android:onClick="openWebActivity"
         android:scaleType="fitCenter"
         android:src="@drawable/inet" />

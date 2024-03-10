@@ -28,7 +28,7 @@ public class MessageActivity extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/plain");
         intent.putExtra(Intent.EXTRA_TEXT, message);
-        intent.setPackage("org.telegram.messenger"); // Укажите пакетное имя приложения Telegram
+        intent.setPackage("org.telegram.messenger");
         startActivity(Intent.createChooser(intent, "Отправить через"));
     }
 }

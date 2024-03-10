@@ -1,17 +1,21 @@
 package com.example.semest21;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Button;
 import android.widget.EditText;
-import androidx.appcompat.app.AppCompatActivity;
 
 public class WebActivity extends AppCompatActivity {
 
-    private WebView webView;
-    private EditText editTextSearch;
+    WebView webView;
+    EditText editText;
+    Button button;
+    Button buttonBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,18 +23,18 @@ public class WebActivity extends AppCompatActivity {
         setContentView(R.layout.activity_web);
 
         webView = findViewById(R.id.webView);
-        editTextSearch = findViewById(R.id.editTextSearch);
-
-        // Настройка WebView
-        WebSettings webSettings = webView.getSettings();
-        webSettings.setJavaScriptEnabled(true); // Разрешить выполнение JavaScript
-
+        editText = findViewById(R.id.editTextSearch);
+        button = findViewById(R.id.button);
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("https://www.example.com"); // Загрузка веб-страницы
-    }
 
-    public void searchOnWebView(View view) {
-        String searchText = editTextSearch.getText().toString();
-        webView.findAllAsync(searchText);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String query = editText.getText().toString();
+                String url = "https://www.google.com/search?q=" + query;
+
+                webView.loadUrl(url);
+            }
+        });
     }
 }
